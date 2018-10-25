@@ -1,13 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>index</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %}
+首页
+{% endblock %}
+
+{% block main %}
 <h1>这是首页</h1>
 <p>用户名：{{username}}</p>
 <p>性别：{{gender}}</p>
 <p>年龄：{{age}}</p>
-</body>
-</html>
+
+<hr>
+<p>名字：{{ person.name }}</p>
+<p>年龄：{{ person.age }}</p>
+
+<hr>
+<p>百度：{{ website.baidu }}</p>
+<p>谷歌：{{ website.google }}</p>
+{% endblock %}

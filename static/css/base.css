@@ -1,0 +1,16 @@
+.nav{
+    background: #3a3a3a;
+    height: 60px;
+}
+ul{
+    overflow: hidden;
+}
+ul li{
+    float: left;
+    list-style: none;
+    padding: 0 10px;
+    line-height: 60px;
+}
+ul li a{
+    color: #ffffff;
+}
