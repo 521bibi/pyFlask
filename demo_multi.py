@@ -12,6 +12,7 @@ db.init_app(app)
 app.config['SECRET_KEY'] = os.urandom(24)
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(days=7)
 
+
 @app.route('/')
 def index():
 
