@@ -1,3 +1,5 @@
+
+
 DEBUG = True
 
 # dialect+driver://username:password@host:port/database
@@ -12,3 +14,4 @@ DATABASE = 'test'
 SQLALCHEMY_DATABASE_URI =  "{}+{}://{}:{}@{}:{}/{}?charset=utf8".format(DIALECT,DRIVER,USERNAME,PASSWORD,HOST,PORT,DATABASE,)
 
 SQLALCHEMY_TRACK_MODIFICATIONS = 'False'
+

@@ -10,6 +10,7 @@
 <div class="nav">
     <ul>
         <li><a href={{ url_for('index') }}>首页</a> </li>
+        <li><a href={{ url_for('search',q='hello') }}>搜索</a> </li>
         <li><a href={{ url_for('questions',is_login='1') }}>发布问答</a> </li>
         <li><a href={{ url_for('login') }}>登录</a> </li>
     </ul>
