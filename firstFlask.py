@@ -1,8 +1,12 @@
 from flask import Flask,redirect,url_for,render_template
+from flask_sqlalchemy import SQLAlchemy
 import config
 
 app = Flask(__name__)
 app.config.from_object(config)
+db = SQLAlchemy(app)
+
+db.create_all()
 
 @app.route('/')
 def index():
@@ -27,6 +31,7 @@ def index():
 @app.route('/login/')
 def login():
     return render_template('login.html')
+
 
 # @app.route('/questions/<is_login>')
 # def questions(is_login):
